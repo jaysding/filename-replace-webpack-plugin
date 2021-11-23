@@ -22,10 +22,10 @@ npm install --save-dev filename-replace-webpack-plugin
 
 **webpack.config.js**
 
-```
+```javascript
 const FilenameReplaceWebpackPlugin = require('./plugins/filename-replace-webpack-plugin');
 module.exports = {
-	...
+	// ...
 	plugins: [
         new FilenameReplaceWebpackPlugin([{
             from: /main.*\.js$/, // matching main.*****.js
